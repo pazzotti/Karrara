@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
-import {MatDialogModule} from '@angular/material/dialog';
 import { LiveFormDialogComponent } from './app/home/live-form-dialog/live-form-dialog.component';
 import { ContratoTerminalFormDialogComponent } from './app/home/contrato_terminal/contrato-terminal-form-dialog.component';
 import { ContratoTransportadoraFormDialogComponent } from './app/home/contrato_transportadora/contrato-transportadora-form-dialog.component';
@@ -71,7 +70,6 @@ import { NgChartsModule } from 'ng2-charts';
     HeaderModule,
     HttpClientModule,
     FormsModule,
-    MatDialogModule,
     BrowserAnimationsModule,
     BrowserAnimationsModule,
     ProgressbarModule.forRoot()
