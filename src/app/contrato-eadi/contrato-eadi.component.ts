@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Food } from '../shared/models/Food';
 import { ApiService } from '../services/contratos/contratos.service';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { LiveFormDialogComponent } from '../app/home/live-form-dialog/live-form-dialog.component';
@@ -16,7 +15,6 @@ export class Contrato_EADIComponent {
   urlConsulta: string = 'https://4i6nb2mb07.execute-api.sa-east-1.amazonaws.com/dev13';
   query: string = 'Contratos_EADI_Inbound';
   dataSource: any;
-  foods: Food[] = [];
   base: number = 3;
   ID: number = Date.now();
   liner: string = "";

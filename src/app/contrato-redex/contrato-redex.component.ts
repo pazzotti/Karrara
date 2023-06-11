@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Food } from '../shared/models/Food';
 import { ApiService } from '../services/contratos/contratos.service';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { LiveFormDialogComponent } from '../app/home/live-form-dialog/live-form-dialog.component';
@@ -16,7 +15,6 @@ export class Contrato_RedexComponent {
   query: string = 'Contratos_Redex_Inbound';
   data:any;
   dataSource: any;
-  foods: Food[] = [];
   base: number = 3;
   ID: number = Date.now();
   liner: string = "";

@@ -1,5 +1,4 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { Food } from '../shared/models/Food';
 import { ApiService } from '../services/contratos/contratos.service';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ContratoTransportadoraFormDialogComponent } from '../app/home/contrato_transportadora/contrato-transportadora-form-dialog.component';
@@ -19,7 +18,6 @@ export class ContratoTransportadoraComponent {
   urlConsulta: string = 'https://4i6nb2mb07.execute-api.sa-east-1.amazonaws.com/dev13';
   query: string = 'Transportadoras_Inbound';
   data: any;
-  foods: Food[] = [];
   base: number = 3;
   ID: number = Date.now();
   comentario: string = "";
